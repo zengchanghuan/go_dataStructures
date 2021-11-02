@@ -4,8 +4,17 @@ import (
 	"fmt"
 	"go_dataStructures/ArrayList"
 )
-
 func main()  {
+	var array ArrayList.List = ArrayList.NewArray()
+	array.Append("a")
+	array.Append("b")
+	array.Append("c")
+	for i := 0; i < 10; i++ {
+		array.Insert(2,"x5")
+		fmt.Println(array)
+	}
+}
+func main2()  {
 	array := ArrayList.NewArray()
 	array.Append("a")
 	array.Append("b")
