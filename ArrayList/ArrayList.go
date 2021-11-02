@@ -30,6 +30,8 @@ type List interface {
 	//返回字符串
 	String()string
 
+	Iterator() Iterator
+
 }
 
 type ArrayList struct {

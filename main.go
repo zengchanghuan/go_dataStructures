@@ -4,7 +4,28 @@ import (
 	"fmt"
 	"go_dataStructures/ArrayList"
 )
+
 func main()  {
+	array := ArrayList.NewArray()
+	array.Append("a")
+	array.Append("b")
+	array.Append("c")
+	array.Append("d")
+	array.Append("e")
+	array.Append("f")
+	array.Append("g")
+
+	for iterator := array.Iterator(); iterator.HaxNext(); {
+		item,_ := iterator.Next()
+		if item == "e" {
+			iterator.Remove()
+		}
+		fmt.Println(item)
+	}
+    fmt.Println("*******")
+	fmt.Println(array)
+}
+func main3()  {
 	var array ArrayList.List = ArrayList.NewArray()
 	array.Append("a")
 	array.Append("b")
