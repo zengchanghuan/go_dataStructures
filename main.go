@@ -7,6 +7,18 @@ import (
 )
 
 func main()  {
+	stack := ArrayList.NewStack()
+	stack.Push(1)
+	stack.Push(2)
+	stack.Push(3)
+	stack.Push(4)
+	stack.Push(5)
+	fmt.Println(stack.Peek())
+	stack.Push(6)
+	fmt.Println(stack.Peek())
+	fmt.Println("*****")
+}
+func main5()  {
 	stack := StackArray.NewStack()
 	stack.Push(1)
 	stack.Push(2)
