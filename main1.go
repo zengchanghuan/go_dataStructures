@@ -6,7 +6,17 @@ import (
 	"go_dataStructures/StackArray"
 )
 
-func main()  {
+func Fibonacci(num int)int  {
+	if num == 1 || num == 2 {
+		return 1
+	} else {
+		return Fibonacci(num - 1) + Fibonacci(num - 2)
+	}
+}
+func main7()  {
+	fmt.Println(Fibonacci(7))
+}
+func main6()  {
 	stack := ArrayList.NewStack()
 	stack.Push(1)
 	stack.Push(2)
